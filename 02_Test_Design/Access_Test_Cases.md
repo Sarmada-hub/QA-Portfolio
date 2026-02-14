@@ -1,7 +1,7 @@
 # Cas de test – Accès & Authentification
 Projet : SaaS RDV médicaux   
 Module : Authentification / Gestion de session / Contrôle d’accès  
-Auteur : Sarmada Mohamed  
+Auteur : Sarmada MOHAMED  
 
 ## Hypothèses & périmètre
 - Rôles : Patient, Praticien, Admin 
