@@ -32,10 +32,10 @@ Exécuter des tests manuels sur une application réelle afin de valider les fonc
 3. Cliquer sur Login
 
 Résultat attendu :
-Connexion réussie, accès à la page inventaire
+Connexion réussie, accès à la page produits
 
 Résultat observé :
-Connexion réussie, accès à la page produits 
+Connexion réussie, redirection vers la page affichant la liste des produits 
 
 Statut :
 PASS
@@ -47,14 +47,14 @@ PASS
 Étapes :
 1. Saisir un mauvais mot de passe
    Username : standard_user
-   Password : secret!
+   Password : secret
 3. Cliquer sur Login
 
 Résultat attendu :
-Message d'erreur affiché
+Le système refuse la connexion et affiche un message d'erreur
 
 Résultat observé :
-Message d'erreur affiché "Epic sadface: Username and password do not match any user in this service"
+Le système refuse la connexion et affiche le message d'erreur suivant : "Epic sadface: Username and password do not match any user in this service"
 
 Statut :
-FAIL
+PASS
