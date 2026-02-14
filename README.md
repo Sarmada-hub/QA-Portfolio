@@ -28,9 +28,9 @@ Modules testés :
 ## Structure du repository
 ```
 QA-Portfolio/
-├── README.md
-└── 02_Test_Design/
-    └── Access_Test_Cases.md
+- README.md
+- 02_Test_Design/
+  - Access_Test_Cases.md
 ```
 
 
