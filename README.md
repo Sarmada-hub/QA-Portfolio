@@ -26,12 +26,14 @@ Modules testés :
 - Contrôle d’accès et sécurité
 
 ## Structure du repository
+'''
 QA-Portfolio/
 │
 ├── README.md
 │
 └── 02_Test_Design/
-└── Access_Test_Cases.md
+    └── Access_Test_Cases.md
+'''
 
 
 ## Compétences démontrées
