@@ -21,9 +21,9 @@ Version: 1.1
 2. Observer la page affichée
 
 **Résultat attendu:**
-- La page d'accueil publique s'affiche
-- Les actions protégées (ex: réserver/RDV) ne sont pas accessibles
-- Un bouton "Connexion/Inscription" est visible
+- La page d'accueil publique s'affiche  
+- Les actions protégées (ex: réserver/RDV) ne sont pas accessibles  
+- Un bouton "Connexion/Inscription" est visible  
 
 ---
 
@@ -45,9 +45,9 @@ Version: 1.1
 4. Cliquer sur "Se connecter"
 
 **Résultat attendu :**
-- L'utilisateur est authentifié
-- Redirection vers le tableau de bord
-- La session est active 
+- L'utilisateur est authentifié  
+- Redirection vers le tableau de bord  
+- La session est active  
 
 ---
 
@@ -122,11 +122,11 @@ la session est active
 2. Saisir l'email de test
 3. Saisis le mot de passe de test
 
-**Résultat attendu:**
-- Inscription refusée
-- Message d'erreur explicite affiché indiquant que le mot de passe ne respecte pas les critères requis
-- Aucun compte n'est créé
-- L'utilisateur reste sur la page d'inscription 
+**Résultat attendu:**  
+- Inscription refusée  
+- Message d'erreur explicite affiché indiquant que le mot de passe ne respecte pas les critères requis  
+- Aucun compte n'est créé  
+- L'utilisateur reste sur la page d'inscription  
 
 ## CT-ACC-006 : Accès direct à une page protégée sans être connecté
 **Priorité :** Critique
@@ -142,9 +142,9 @@ la session est active
 1. Saisir directement l'URL protégée dans le navigateur
 2. Valider
 
-**Résultat attendu :**
-- Redirection vers la page "Connexion"
-- Aucun contenu protégé visible
+**Résultat attendu :**  
+- Redirection vers la page "Connexion"  
+- Aucun contenu protégé visible  
 
 ---
 
@@ -160,6 +160,6 @@ la session est active
 2. Cliquer sur le bouton "retour" du navigateur
 
 **Résultat attendu :**
-- Accès refusé aux pages protégées
-- Redirection vers "Connexion" ou page publique
-- Aucune donnée sensible affichée
+- Accès refusé aux pages protégées  
+- Redirection vers "Connexion" ou page publique  
+- Aucune donnée sensible affichée  
