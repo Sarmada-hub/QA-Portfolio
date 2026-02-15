@@ -25,7 +25,7 @@ Vérifier le bon fonctionnement du module d'authentification en exécutant des t
 
 ## 3. Tests exécutés
 
-### ET-001 : Connexion avec identifiants valides
+### TE-001 : Connexion avec identifiants valides
 
 **Priorité :** Critique  
 **Type :** Test fonctionnel (positif) 
@@ -59,7 +59,7 @@ Vérifier le bon fonctionnement du module d'authentification en exécutant des t
 
 ---
 
-### ET-002 : Connexion avec identifiants invalides
+### TE-002 : Connexion avec identifiants invalides
 
 **Priorité :** Critique  
 **Type :** Test fonctionnel (négatif)  
@@ -95,7 +95,7 @@ Vérifier le bon fonctionnement du module d'authentification en exécutant des t
 
 ---
 
-## ET-003 : Connexion avec username vide 
+## TE-003 : Connexion avec username vide 
 
 **Priorité :** Haute  
 **Type :** Test fonctionnel (négatif)
@@ -130,7 +130,7 @@ Vérifier le bon fonctionnement du module d'authentification en exécutant des t
 
 ---
 
-## ET-004 : Déconnexion utilisateur  
+## TE-004 : Déconnexion utilisateur  
 
 **Priorité :** Critique  
 **Type :** Test fonctionnel  
