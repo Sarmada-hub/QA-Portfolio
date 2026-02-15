@@ -28,9 +28,13 @@ Modules testés :
 ## Structure du repository
 ```
 QA-Portfolio/
-- README.md
-- 02_Test_Design/
+- 01_Test_Design/
   - Access_Test_Cases.md
+- 02_Test_Execution/
+  - Issue_Report.md
+  - SwagLabs_Test_Execution.md
+- README.md
+
 ```
 
 
