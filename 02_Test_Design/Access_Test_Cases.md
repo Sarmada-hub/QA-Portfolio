@@ -21,9 +21,9 @@ URL : Page d'accueil publique
 2. Observer la page affichée
 
 **Résultat attendu:**
-La page d'accueil publique s'affiche
-Les actions protégées (ex: réserver/RDV) ne sont pas accessibles
-Un bouton "Connexion/Inscription" est visible
+- La page d'accueil publique s'affiche
+- Les actions protégées (ex: réserver/RDV) ne sont pas accessibles
+- Un bouton "Connexion/Inscription" est visible
 
 ---
 
