@@ -10,7 +10,7 @@ Version: 1.1
 **Priorité :** Haute  
 **Type :** Fonctionnel  
 
-**Préconditions :**  
+**Préconditions :**
 - Aucun utilisateur connecté (session vide)  
 
 **Données de test :**  
