@@ -52,7 +52,7 @@ Version: 1.1
 ---
 
 ## CT-ACC-003 : Connexion refusée dû à un mot de passe incorrect
-**Priorité :** Haute
+**Priorité :** Haute  
 **Type :** Fonctionnel négatif 
 
 **Préconditions :**
@@ -77,7 +77,7 @@ Version: 1.1
 ---
 
 ## CT-ACC-004 : Inscription avec mot de passe valide
-**Priorité :** Haute
+**Priorité :** Haute  
 **Type :** Fonctionnel positif
 
 **Préconditions :**
@@ -90,10 +90,10 @@ Version: 1.1
 - Mot de passe : QaTest1!
 
 **Etapes:**
-- 1. Accéder à la page "Inscription"
-- 2. Saisir l'email de test
-- 3. Saisir le mot de passe de test
-- 4. Cliquer sur "Créer un compte"
+1. Accéder à la page "Inscription"
+2. Saisir l'email de test
+3. Saisir le mot de passe de test
+4. Cliquer sur "Créer un compte"
 
 **Résultat attendu :**
 - Un message informe l'utilisateur qu'un email de confirmation a été envoyé
@@ -105,7 +105,7 @@ la session est active
 ---
 
 ## CT-ACC-005 : Inscription avec mot de passe invalide
-**Priorité :** Haute
+**Priorité :** Haute  
 **Type :** Fonctionnel négatif
 
 **Préconditions :**
@@ -126,10 +126,12 @@ la session est active
 - Inscription refusée  
 - Message d'erreur explicite affiché indiquant que le mot de passe ne respecte pas les critères requis  
 - Aucun compte n'est créé  
-- L'utilisateur reste sur la page d'inscription  
+- L'utilisateur reste sur la page d'inscription
+
+---  
 
 ## CT-ACC-006 : Accès direct à une page protégée sans être connecté
-**Priorité :** Critique
+**Priorité :** Critique  
 **Type :** Contrôle d'acès, sécurité
 
 **Préconditions :**
@@ -149,7 +151,7 @@ la session est active
 ---
 
 ## CT-ACC-007 : Accès via retour navigateur après déconnexion 
-**Priorité :** Critique
+**Priorité :** Critique  
 **Type :** Gestion de session
 
 **Préconditions :**
