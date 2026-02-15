@@ -9,7 +9,7 @@ Version : 1.1
 
 # CT-RDV-001 : Accès à la page de réservation
 **Priorité :** Haute  
-**Type :** Fonctionnel  
+**Type :** Test fonctionnel  
 
 **Préconditions :**
 - Patient connecté
@@ -25,7 +25,7 @@ Version : 1.1
 
 ## CT-RDV-002 : Affichage des créneaux disponibles après sélection praticien
 **Priorité :** Critique  
-**Type :** Fonctionnel  
+**Type :** Test fonctionnel  
 
 **Préconditions :**  
 - Patient connecté
@@ -47,7 +47,7 @@ Version : 1.1
 
 ## CT-RDV-003 : Réservation d'un rendez-vous sur un créneau disponible
 **Priorité :** Critique  
-**Type :** Fonctionnel  
+**Type :** Test fonctionnel  
 
 **Préconditions :**  
 - Patient connecté
@@ -77,7 +77,7 @@ Version : 1.1
 
 ## CT-RDV-004 : Réservation refusée si créneau déjà reservé
 **Priorité :** Critique  
-**Type :** Fonctionnel négatif  
+**Type :** Test fonctionnel   
 
 **Préconditions :**  
 - Patient connecté
@@ -97,7 +97,7 @@ Version : 1.1
 
 ## CT-RDV-005 : Annulation d'un rendez-vous par le patient
 **Priorité :** Haute  
-**Type :** Fonctionnel  
+**Type :** Test fonctionnel  
 
 **Préconditions :**  
 - Patient connecté
@@ -119,7 +119,7 @@ Version : 1.1
 
 ## CT-RDV-006 : Tentative de réservation sans authentification
 **Priorité :** Critique  
-**Type :** Contrôle d'accès  
+**Type :** Test de sécurité
 
 **Préconditions :**  
 - Aucun utilisateur connecté
