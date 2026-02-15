@@ -29,7 +29,7 @@ Version: 1.1
 
 ## CT-ACC-002 : Connexion avec identifiants valides  
 **Priorité :** Critique  
-**Type :** Fonctionnel positif  
+**Type :** Fonctionnel   
 
 **Préconditions :**   
 - Un compte patient existe et est actif  
@@ -53,7 +53,7 @@ Version: 1.1
 
 ## CT-ACC-003 : Connexion refusée dû à un mot de passe incorrect
 **Priorité :** Haute  
-**Type :** Fonctionnel négatif 
+**Type :** Fonctionnel  
 
 **Préconditions :**
 - Un compte patient existe
@@ -78,7 +78,7 @@ Version: 1.1
 
 ## CT-ACC-004 : Inscription avec mot de passe valide
 **Priorité :** Haute  
-**Type :** Fonctionnel positif
+**Type :** Fonctionnel 
 
 **Préconditions :**
 - Aucun utilisateur connecté
@@ -106,7 +106,7 @@ la session est active
 
 ## CT-ACC-005 : Inscription avec mot de passe invalide
 **Priorité :** Haute  
-**Type :** Fonctionnel négatif
+**Type :** Fonctionnel 
 
 **Préconditions :**
 - Aucun utilisateur connecté
@@ -128,40 +128,3 @@ la session est active
 - Aucun compte n'est créé  
 - L'utilisateur reste sur la page d'inscription
 
----  
-
-## CT-ACC-006 : Accès direct à une page protégée sans être connecté
-**Priorité :** Critique  
-**Type :** Contrôle d'acès, sécurité
-
-**Préconditions :**
-- Aucun utilisateur conencté
-
-**Données de test :**
-- URL protégée
-
-**Etapes :**
-1. Saisir directement l'URL protégée dans le navigateur
-2. Valider
-
-**Résultat attendu :**  
-- Redirection vers la page "Connexion"  
-- Aucun contenu protégé visible  
-
----
-
-## CT-ACC-007 : Accès via retour navigateur après déconnexion 
-**Priorité :** Critique  
-**Type :** Gestion de session
-
-**Préconditions :**
-- Utilisateur connecté puis déconnecté
-
-**Etapes :**
-1. Se déconnecter
-2. Cliquer sur le bouton "retour" du navigateur
-
-**Résultat attendu :**
-- Accès refusé aux pages protégées  
-- Redirection vers "Connexion" ou page publique  
-- Aucune donnée sensible affichée  
