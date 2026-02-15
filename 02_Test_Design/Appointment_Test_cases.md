@@ -1,15 +1,15 @@
 # Cas de test : Réservation de RDV
 
-Projet : SaaS de gestion de RDV médicaux (fictif)
-Module : Réservation de rendez-vous  
-Auteur : Sarmada MOHAMED
-Version : 1.1
+Projet : SaaS de gestion de RDV médicaux (fictif)  
+Module : Réservation de rendez-vous   
+Auteur : Sarmada MOHAMED  
+Version : 1.1  
 
 ---
 
 # CT-RDV-001 : Accès à la page de réservation
-**Priorité :** Hute
-**Type :** Fonctionnel
+**Priorité :** Haute  
+**Type :** Fonctionnel  
 
 **Préconditions :**
 - Patient connecté
