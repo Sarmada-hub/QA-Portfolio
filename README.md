@@ -59,7 +59,8 @@ QA-Portfolio/
 - 03_Test_Execution/
   - Issue_Report.md
   - SwagLabs_Test_Execution.md
-- 04_Embedded_Project/Landing_Project
+- 04_Embedded_Project
+  -Landing_Project
     - 00_Context.md
     - 01_Requirements.md
     - 02_Test_Cases.md
