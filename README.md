@@ -54,13 +54,16 @@ L'objectif est de démontrer une approche structurée de validation dans un envi
 ## Structure du repository
 ```
 QA-Portfolio/
-- 02_Test_Design/
-  - Access_Test_Cases.md
-- 03_Test_Execution/
-  - Issue_Report.md
-  - SwagLabs_Test_Execution.md
-- 04_Embedded_Project
-  -Landing_Project
+- SaaS_Project/
+  - Medical_Appointment/
+    - Test_Cases/
+      - Acces_Test_Cases.md
+      - Appointment_Test_Cases.md
+    - Test_Execution/
+      - SwagLabs_Test_Execution.md
+    - Issue_Report.md
+- Embedded_Project/
+  -Landing_Project/
     - 00_Context.md
     - 01_Requirements.md
     - 02_Test_Cases.md
