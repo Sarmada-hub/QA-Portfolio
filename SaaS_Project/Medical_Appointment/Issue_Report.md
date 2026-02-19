@@ -81,3 +81,11 @@ Basse
 ---
 
 ## Statut
+
+Ouvert
+
+---
+
+## Recommandation
+
+Améliorer le message d’erreur afin de fournir une indication plus claire à l’utilisateur, tout en respectant les bonnes pratiques de sécurité.
