@@ -3,7 +3,7 @@
 Bienvenue dans mon portfolio QA.
 
 Ce repository présente un projet de test logiciel réalisé dans le cadre de ma reconversion vers le domaine de la qualité logicielle.  
-L'objectif est de montrer ma capacité à structurer une démarche d'analyse des exigences, de conception de test dans différents contextes et de validation.
+L'objectif est de montrer ma capacité à structurer une démarche d'analyse d'exigences, de conception de test dans différents contextes et de validation.
 
 ---
 
@@ -25,7 +25,7 @@ Ce projet vise à démontrer ma capacité à :
 
 Application web permettant aux patients de réserver des rendez-vous avec des professionnels de santé.
 
-## Fonctionnalités testés :
+## Fonctionnalités testées :
 
 - Authentification et gestion des accès
 - Réservation de rendez-vous 
@@ -52,8 +52,6 @@ L'objectif est de démontrer une approche structurée de validation dans un envi
 ---
 
 # Projet 3 : Financial Flow
-
-## Financial Flows Project
 
 ## Contexte
 
@@ -111,7 +109,7 @@ QA-Portfolio/
 
 ## Environnement
 
-Projet réalisé dans le cadre d’une préparation au métier de QA
+Projet réalisé dans le cadre d’une préparation au métier du test et de la qualité logicielle.
 
 ---
 
