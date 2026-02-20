@@ -31,7 +31,7 @@ Where:
 - Withdrawal/Transfer require sufficient balance.
 - Balance updates immediately after a successful operation.
 
-### REQ-005 : No double execution
+### REQ-005 : Anti double execution
 - Double click / refresh must not create duplicated transactions.
 - Every transaction has a unique ID (e.g., TX-YYYYMMDD-xxxxx).
 
@@ -49,7 +49,7 @@ Where:
 ---
 
 ## Sample Test Users
-- User 1: balance 1000 EUR, Identity VERIFIED
-- User 2: balance 2000 EUR, Identity VERIFIED
-- User 3: balance 3000 EUR, Identity NOT_STARTED
-- User 4: balance 4000 EUR, Identity PENDING
+- User 1: balance 5000 EUR, Identity VERIFIED
+- User 2: balance 100 EUR, Identity VERIFIED
+- User 3: balance 5000 EUR, Identity NOT_STARTED
+- User 4: balance 5000 EUR, Identity PENDING
