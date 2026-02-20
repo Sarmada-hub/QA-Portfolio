@@ -51,6 +51,22 @@ L'objectif est de démontrer une approche structurée de validation dans un envi
 
 ---
 
+# Projet 3 : Financial Flow
+
+## Financial Flows Project
+
+## Contexte
+
+Application interne de gestion de flux financiers (dépôt, retrait, transfert), intégrant des contrôles d’identité et un historique des transactions.
+
+L’objectif est de démontrer une approche structurée :
+- Identification et analyse des risques
+- Conception des cas de test
+- Matrice de traçabilité
+- Reporting de test et gestion des anomalies
+
+---
+
 ## Structure du repository
 ```
 QA-Portfolio/
@@ -69,6 +85,13 @@ QA-Portfolio/
     - 02_Test_Cases.md
     - 03_Traceability_Matrix.md
     - 04_Test_Report.md
+- Financial_Flow_Project/
+  - 00_Contex.md
+  - 01_Requirements.md
+  - 02_Test_Cases.md
+  - 03_Traceability_Matrix.md
+  - 04_Test_Report.md
+  _ 05_Issue_Report.md
 - README.md
 
 ```
