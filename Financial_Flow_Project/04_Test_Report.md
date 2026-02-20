@@ -17,7 +17,7 @@ This report simulates tests execution of the Financial Flows application.
 ## Key findings
 - Critical risk identified: duplicate transaction creation on double-click (BUG-001)
 - Traceability issue: FAILED operations missing from history (BUG-002)
-- Depositi accepts amount 0 EUR (BUG-003)
+- Deposite accepts amount 0 EUR (BUG-003)
 
 ## Recommendation
 Fix critical issues before production:
