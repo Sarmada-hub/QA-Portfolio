@@ -14,10 +14,10 @@ Authentication will fail when credentials are invalid.
 REQ-ACC-004  
 Password rules will be enforced during account creation.
 
-REQ-ACC-005
+REQ-ACC-005  
 Registration will succed when credentials are valid.
 
-REQ-ACC-005
+REQ-ACC-006  
 Registration will fail when credentials are invalid.
 
 ---
