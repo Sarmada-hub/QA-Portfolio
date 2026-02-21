@@ -14,13 +14,13 @@ This matrix ensures traceability between functional requirements and validation 
 | REQ-APT-001 | Available ppointment will be display | TC-APT-001 | Functional | PASS |
 | REQ-APT-002 | Unaivable appointment won't be display | TC-APT-001 | Functional | PASS |
 | REQ-APT-003 | Book appointment | TC-APT-001 | Functional | PASS |
-| REQ-APT-004 | Cancel appointment ≥ 24h before | TC-APT-002 | Functional | PASS |
-| REQ-APT-005 | Cancellation rejected < 24h | TC-APT-003 | Functional | PASS |
+| REQ-APT-004 | Cancel appointment more than 24h before | TC-APT-002 | Functional | PASS |
+| REQ-APT-005 | Cancellation rejected less than 24h before | TC-APT-003 | Functional | FAIL |
 
 ---
 
 ## Coverage Summary
 
 - Total Requirements: 10  
-- Covered Requirements: 10  
-- Coverage Rate: 100%
+- Covered Requirements: 9  
+- Coverage Rate: 90%
