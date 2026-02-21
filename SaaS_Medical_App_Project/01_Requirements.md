@@ -1,6 +1,6 @@
 # Requirements
 
-## Authentication 
+## Authentification 
 
 REQ-ACC-001  
 Users shall access public pages without authentication.
