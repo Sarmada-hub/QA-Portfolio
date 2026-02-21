@@ -137,31 +137,7 @@
 
 # Appointment booking
 
-## TC-APT-001: Access appointment booking page 
-
-| Field | Description |
-|------|-------------|
-| Requirement ID | REQ-APT-001 |
-| Priority | High |
-| Test Type | Functional |
-| Module | Appointment booking |
-
-| Step | Action | Expected Result |
-|------|--------|----------------|
-| 1 | Open the URL | Public homepage is displayed|
-| 2 | Select practitioner | Available appointment displayed |
-| 3 | Select consultation reason | Reason accepted |
-| 4 | Select available time slot | Appointment selectable |
-
-
-### Execution Result
-
-| Status | 
-|--------|
-| PASS |
-
-
-## TC-APT-002 : Book appointment 
+## TC-APT-001 : Book appointment 
 
 | Field | Description |
 |------|-------------|
