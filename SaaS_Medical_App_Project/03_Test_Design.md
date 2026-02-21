@@ -12,7 +12,6 @@
 | Module | Accessibility |
 | Preconditions | No user is logged in (empty session) |
 
-### Test steps
 
 | Step | Action | Expected Result |
 |------|--------|----------------|
@@ -36,8 +35,6 @@
 | Module | Authentication |
 | Preconditions | User account exists and user is not login |
 
-
-### Test steps
 
 | Step | Action | Expected result |
 |------|--------|----------------|
@@ -65,8 +62,6 @@
 | Preconditions | User account exists and user is not logged in |
 
 
-### Test steps
-
 | Step | Action | Expected Result |
 |------|--------|----------------|
 | 1 | Open the URL | Public homepage is displayed |
@@ -93,8 +88,6 @@
 | Preconditions | User doesn't have account |
 
 
-### Test Steps
-
 | Step | Action | Expected Result |
 |------|--------|----------------|
 | 1 | Open the URL | Public homepage is displayed, "Login/Sign up" button is visible |
@@ -115,7 +108,14 @@
 
 ## TC-ACC-005: Sign up with an invalid password
 
-### Test Steps
+| Field | Description |
+|------|-------------|
+| Requirement ID | REQ-ACC-005 |
+| Priority | High |
+| Test Type | Functional |
+| Module | Accessibility |
+| Preconditions | No user is logged in (empty session) |
+
 
 | Step | Action | Expected Result |
 |------|--------|----------------|
@@ -165,7 +165,7 @@
 
 | Field | Description |
 |------|-------------|
-| Requirement ID | REQ-APT-002 and REQ-APT-003 |
+| Requirement ID | REQ-APT-001, REQ-APT-002 and REQ-APT-003 |
 | Priority | High |
 | Test Type | Functional |
 | Module | Appointment booking |
