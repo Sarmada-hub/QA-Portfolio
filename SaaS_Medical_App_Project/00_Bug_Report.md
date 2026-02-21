@@ -31,8 +31,8 @@ The following message appears : “Epic sadface: Username and password do not ma
 
 ## Criticity 
 
-High critity  
+Low critity  
 
 ## Priority 
 
-High priority  
+Low priority  
