@@ -168,7 +168,7 @@
 | PASS |
 
 
-## TC-APT-003: Cancel an appointment by the patient (more than 24 hours before)
+## TC-APT-002: Cancel an appointment by the patient (more than 24 hours before)
 
 | Field | Description |
 |------|-------------|
@@ -199,7 +199,7 @@
 | PASS |
 
 
-## TC-APT-004: Cancellation rejected less than 24 hours before the appointment
+## TC-APT-003: Cancellation rejected less than 24 hours before the appointment
 
 | Field | Description |
 |------|-------------|
