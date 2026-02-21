@@ -8,7 +8,7 @@ This matrix ensures traceability between functional requirements and validation 
 |----------------|------------------------|--------------|-----------|------------------|
 | REQ-ACC-001 | Access public pages without authentication | TC-ACC-001 | Functional | PASS |
 | REQ-ACC-002 | User authentication with valid credentials | TC-ACC-002 | Functional | PASS |
-| REQ-ACC-003 | Authentication rejected with invalid credentials | TC-ACC-003 | Functionnal | PASS |
+| REQ-ACC-003 | Authentication rejected with invalid credentials | TC-ACC-003 | Functional | PASS |
 | REQ-ACC-004 | Sign up with valid password | TC-ACC-004 | Functional | PASS |
 | REQ-ACC-005 | Sign up with invalid password | TC-ACC-005 | Functional | PASS |
 | REQ-APT-001 | Available ppointment will be display | TC-APT-001 | Functional | PASS |
