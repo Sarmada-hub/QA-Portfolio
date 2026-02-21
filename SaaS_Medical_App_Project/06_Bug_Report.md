@@ -4,7 +4,7 @@
 
 | ID | Tittle | Value |
 |------|------|-------|
-| BUG-001| Appointment can be cancelled within 24 hours before the appointment| Appointment |
+| BUG-001| Appointment can be cancelled within 24 hours before the appointment| Appointment management |
 
 
 ## Description
