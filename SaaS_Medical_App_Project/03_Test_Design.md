@@ -1,54 +1,3 @@
-# Test Cases
-
-# Access and authentication
-
-## TC-ACC-001: Access homepage without authentication
-
-| Field | Description |
-|------|-------------|
-| Requirement ID | REQ-ACC-001 |
-| Priority | High |
-| Test Type | Functional |
-| Module | Accessibility |
-| Preconditions | No user is logged in (empty session) |
-
-
-| Step | Action | Expected Result |
-|------|--------|----------------|
-| 1 | Open the URL | Public homepage is displayed|
-
-
-### Execution result
-
-| Status | 
-|--------|
-| PASS | 
-
-
-## TC-ACC-002 : Login with valid credentials
-
-| Field | Description |
-|------|-------------|
-| Requirement ID | REQ-ACC-002 |
-| Priority | Critical |
-| Test Type | Functional |
-| Module | Authentication |
-| Preconditions | User account exists and user is not login |
-
-
-| Step | Action | Expected result |
-|------|--------|----------------|
-| 1 | Open the URL | Public homepage is displayed|
-| 2 | Click on "login" | Login page is displayed |
-| 3 | Enter valid email | Email is accepted |
-| 4 | Enter valid password | Password is accepted |
-| 5 | Click the button "log in" | User is redirected to dashboard |
-
-### Execution result
-
-| Status | 
-|--------|
-| PASS | 
 
 
 ## TC-ACC-003 : Login rejected due to incorrect password
@@ -122,15 +71,15 @@
 | 1 | Open the URL | Public homepage is displayed, "Login/Sign up" button is visible |
 | 2 | Click on "Sign up"| Sign up page is displayed |
 | 3 | Enter valid email | Email is accepted |
-| 4 | Enter unvalid password | Password is refused, a message explain which conditions the password should respect |
+| 4 | Enter unvalid password | Password is refused, a message explains the conditions that the password must meet |
 | 5 | Click on "Create account" | Sign is rejected, a clear error message is displayed indicating the password does not meet the required criteria, no account is created, user remains on the sign up page |
 
 
 ### Execution Result
 
-| Status | 
-|--------|
-| PASS |
+| Status | Reason of failure|
+|--------| ------------------|
+| FAIL | The message explains the conditions that the password must meet does not appear, the following message appears "Epic sadface: Username and password do not match any user in this service" |
 
 
 ---
