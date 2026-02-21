@@ -1,4 +1,4 @@
-# Issue Report 
+# Bug report 
 
 ## BUG-001 — Duplicate transaction on double click 
 Severity: Critical  
