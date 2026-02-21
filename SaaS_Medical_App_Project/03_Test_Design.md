@@ -77,10 +77,9 @@
 
 ### Execution Result
 
-| Status | Reason of failure|
-|--------| ------------------|
-| FAIL | The message explains the conditions that the password must meet does not appear, the following message appears "Epic sadface: Username and password do not match any user in this service" |
-
+| Status | 
+|--------| 
+| PASS | 
 
 ---
 
@@ -166,11 +165,11 @@
 | 3 | Enter valid password | Password is accepted |
 | 4 | Go to "My appointments" | Appointment page is displayed |
 | 5 | Select the appontment to cancel | "Cancel" button is display |
-| 6 | Click on the button "Cancel" | Following message is displayed "You can't cancell this appointment?" |
-| 7 | Check appointment list | Appointment is available |
+| 6 | Click on the button "Cancel" | Following message is displayed "This appointment can't be cancell" |
+| 7 | Check appointment list | Appointment is not available |
 
 ### Execution Result
 
-| Status | 
-|--------|
-| PASS |
+| Status | Reason of failure |
+|--------| ------------------|
+| FAIL | User have the possibility to cancel an appointment within 24 hours before |
