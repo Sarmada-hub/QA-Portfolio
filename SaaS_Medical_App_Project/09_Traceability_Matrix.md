@@ -11,11 +11,11 @@ This matrix ensures traceability between functional requirements and validation 
 | REQ-ACC-003 | Authentication rejected with invalid credentials | TC-ACC-003 | Functionnal | PASS |
 | REQ-ACC-004 | Sign up with valid password | TC-ACC-004 | Functional | PASS |
 | REQ-ACC-005 | Sign up with invalid password | TC-ACC-005 | Functional | PASS |
-| REQ-APT-001 | Available ppointment will be display | TC-APT-001, TC-APT-002| Functional | PASS |
-| REQ-APT-002 | Unaivable appointment won't be display | TC-APT-002 | Functional | PASS |
-| REQ-APT-003 | Book appointment | TC-APT-002 | Functional | PASS |
-| REQ-APT-004 | Cancel appointment ≥ 24h before | TC-APT-003 | Functional | PASS |
-| REQ-APT-005 | Cancellation rejected < 24h | TC-APT-004 | Functional | PASS |
+| REQ-APT-001 | Available ppointment will be display | TC-APT-001 | Functional | PASS |
+| REQ-APT-002 | Unaivable appointment won't be display | TC-APT-001 | Functional | PASS |
+| REQ-APT-003 | Book appointment | TC-APT-001 | Functional | PASS |
+| REQ-APT-004 | Cancel appointment ≥ 24h before | TC-APT-002 | Functional | PASS |
+| REQ-APT-005 | Cancellation rejected < 24h | TC-APT-003 | Functional | PASS |
 
 ---
 
