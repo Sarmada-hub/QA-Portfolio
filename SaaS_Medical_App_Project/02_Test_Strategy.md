@@ -14,7 +14,7 @@ Ensure system stability and data consistency.
 
 ## Test scope
 
-- Authentication
+- Authentification
 - Session management
 - Appointment booking
 - Appointment cancellation
