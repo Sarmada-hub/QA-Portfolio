@@ -1,4 +1,4 @@
-# Test Report (Simulation)
+# Test report 
 
 ## Summary
 This report simulates tests execution of the Financial Flows application.
@@ -7,7 +7,7 @@ This report simulates tests execution of the Financial Flows application.
 - Priority first: all high priority cases executed first.
 - Focus on risk areas: transfer, withdrawal, idempotency, history traceability, identity blocking.
 
-## Execution result (example)
+## Execution result 
 - Total test cases: 20
 - Executed: 20
 - Passed: 17
