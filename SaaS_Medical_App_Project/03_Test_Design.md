@@ -135,10 +135,9 @@
 | 4 | Go to "My appointments" | Appointment page is displayed |
 | 5 | Select the appontment to cancel | "Cancel" button is display |
 | 6 | Click on the button "Cancel" | Following message is displayed "Are you sure you want to cancel this appointment?", buttons "Confirm" and "Cancel" are dispayed |
-| 7 | Click on the button "Confirm" | Confirmation message is dispplayed, email send to the user to confirm the cancellation |
-| 8 | Confirm booking | Confirmation message displayed, email and/or SMS is send to the user with appointment date and time|
-| 9 | Check appointment list | Appointment is gone |
-| 10 | Verify appointment availability | Appointment is available |
+| 7 | Click on the button "Confirm" | Confirmation message is dispplayed, email and/or SMS is send to the user to confirm the cancellation |
+| 8 | Check appointment list | Appointment is gone |
+| 9 | Verify appointment availability | Appointment is available |
 
 ### Execution Result
 
@@ -165,8 +164,11 @@
 | 3 | Enter valid password | Password is accepted |
 | 4 | Go to "My appointments" | Appointment page is displayed |
 | 5 | Select the appontment to cancel | "Cancel" button is display |
-| 6 | Click on the button "Cancel" | Following message is displayed "This appointment can't be cancell" |
-| 7 | Check appointment list | Appointment is not available |
+| 6 | Click on the button "Cancel" | Following message is displayed "Are you sure you want to cancel this appointment?", buttons "Confirm" and "Cancel" are dispayed |
+| 7 | Click on the button "Confirm" | Confirmation message is dispplayed, email and/or SMS is send to the user to confirm the cancellation |
+| 8 | Check appointment list | Appointment is gone |
+| 9 | Verify appointment availability | Appointment is available |
+
 
 ### Execution Result
 
