@@ -1,5 +1,44 @@
 # Test cases
 
+## TC-ACC-001 : Access homepage without authentification
+
+| Field | Description |
+|------|-------------|
+| Requirement ID | REQ-ACC-001 |
+| Priority | High |
+| Test Type | Functional |
+| Module | Authentication |
+| Preconditions | No user is logged in |
+
+
+| Step | Action | Expected result | Actual result | Pass/Fail |
+|------|--------|-----------------|---------------|-----------|
+| 1 | Open the URL | Public homepage is displayed | Behave as expected | Pass |   
+
+
+
+
+## TC-ACC-002 : Login with valid credentials 
+
+| Field | Description |
+|------|-------------|
+| Requirement ID | REQ-ACC-002 |
+| Priority | High |
+| Test Type | Functional |
+| Module | Authentication |
+| Preconditions | User account exists and user is not logged in |
+
+
+| Step | Action | Expected result | Actual result | Pass/Fail |
+|------|--------|-----------------|---------------|-----------|
+| 1 | Open the URL | Public homepage is displayed | Behave as expected | Pass |
+| 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
+| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
+| 4 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
+
+
+
 ## TC-ACC-003 : Login rejected due to incorrect password
 
 | Field | Description |
@@ -16,8 +55,8 @@
 | 1 | Open the URL | Public homepage is displayed | Behave as expected | Pass |
 | 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
 | 3 | Enter valid email | Email is accepted | Behave as expected | Pass |
-| 4 | Enter unvalid password | Password is rejected | Behave as expected | Pass |
-| 4 | Click on the button "login" | User is not authenticated, a clear error message is displayed, no access to the dashboard | Behave as expected | Pass |
+| 4 | Enter unvalid password | Password is hidden behind black dots | Behave as expected | Pass |
+| 4 | Click on the button "login" | User is not authenticated, the following message is displayed "Incorrect password", no access to the dashboard | Behave as expected | Pass |
 
 
 
@@ -36,11 +75,11 @@
 |------|--------|----------------|----------------|-----------|
 | 1 | Open the URL | Public homepage is displayed, "Login/Sign up" button is visible | Behave as expected | Pass |
 | 2 | Click on "Sign up"| Sign up page is displayed | Behave as expected | Pass |
-| 3 | Enter valid email | Email is accepted | Behave as expected | Pass
-| 4 | Enter valid password | Password is accepted | Behave as expected | Pass |
-| 5 | Click on "Create account" | A message informs the user that a confirmation email has been sent | Behave as expected | Pass |
+| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 4 | Enter valid password | Message explaining the criteria that the password must meet, password is hidden behind black dots | Behave as expected | Pass |
+| 5 | Click on "Create account" | Message informing the user that a confirmation email has been sent | Behave as expected | Pass |
 | 6 | Go to the mail sent| Email contains a link and inform the user that an account has been created | Behave as expected | Pass |
-| 7 | Click on the link | User is redirected to the website, account is activated, session is active | Behave as expected | Pass |  
+| 7 | Click on the link | User redirecting to the website, account is activated, session is active | Behave as expected | Pass |  
 
 
 
@@ -59,9 +98,9 @@
 |------|--------|-----------------|---------------| --------- |
 | 1 | Open the URL | Public homepage is displayed, "Login/Sign up" button is visible | Behave as expected | Pass |
 | 2 | Click on "Sign up"| Sign up page is displayed | Behave as expected | Pass |
-| 3 | Enter valid email | Email is accepted | Behave as expected | Pass |
-| 4 | Enter unvalid password | Password is refused, a message explains the conditions that the password must meet | Behave as expected | Pass |
-| 5 | Click on "Create account" | Sign is rejected, a clear error message is displayed indicating the password does not meet the required criteria, no account is created, user remains on the sign up page | Behave as expected | Pass |
+| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 4 | Enter unvalid password | Message explaining the criteria that the password must meet, password is hidden behind black dots | Behave as expected | Pass |
+| 5 | Click on "Create account" | Sign is rejected, the following message is displayed "The password does not meet the criteria.", no account created, user remains on the sign up page | Behave as expected | Pass |
 
 
 
