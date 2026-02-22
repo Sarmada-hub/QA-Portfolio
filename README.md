@@ -55,7 +55,7 @@ L'objectif est de démontrer une approche structurée de validation dans un envi
 
 ## Contexte
 
-Application interne de gestion de flux financiers (dépôt, retrait, transfert), intégrant des contrôles d’identité et un historique des transactions.
+Application de gestion de flux financiers (dépôt, retrait, transfert) sur un terminal de paiement en libre service, intégrant des contrôles d’identité et un historique des transactions.
 
 L’objectif est de démontrer une approche structurée :
 - Identification et analyse des risques
