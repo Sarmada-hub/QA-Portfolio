@@ -1,15 +1,15 @@
 # Requirements
 
-## Authentification 
+## Authentication 
 
 REQ-ACC-001  
 Users shall access public pages without authentication.
 
 REQ-ACC-002  
-Authentification will succed when credentials are valid.
+Authentication will succed when credentials are valid.
 
 REQ-ACC-003  
-Authentification will fail when credentials are invalid.
+Authentication will fail when credentials are invalid.
 
 REQ-ACC-004  
 Registration will succed when credentials are valid.
