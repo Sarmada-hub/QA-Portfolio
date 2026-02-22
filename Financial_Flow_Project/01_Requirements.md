@@ -1,18 +1,5 @@
 # Requirements 
 
-## Requirement identification 
-
-Requirements are identified using the following format:
-
-REQ-XXX
-
-Where:
-- REQ = Requirements
-- XXX = Sequential number
----
-
-## Functionnal requirements 
-
 ### REQ-001 : Authentication
 - User must be authenticated to perform Deposit/Withdrawal/Transfer.
 - Session expires after 10 minutes of inactivity.
