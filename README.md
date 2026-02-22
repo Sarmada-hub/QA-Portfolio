@@ -68,14 +68,13 @@ L’objectif est de démontrer une approche structurée :
 ## Structure du repository
 ```
 QA-Portfolio/
-- SaaS_Project/
-  - Medical_Appointment/
-    - Test_Cases/
-      - Acces_Test_Cases.md
-      - Appointment_Test_Cases.md
-    - Test_Execution/
-      - SwagLabs_Test_Execution.md
-    - Issue_Report.md
+- SaaS_Medical_App_Project/
+  - 00_Contex.md
+  - 01_Requirements.md
+  - 02_Test_Cases.md
+  - 03_Traceability_Matrix.md
+  - 04_Bug_Report.md
+  _ 05_Test_Report.md
 - Embedded_Project/
   -Landing_Project/
     - 00_Context.md
@@ -88,8 +87,8 @@ QA-Portfolio/
   - 01_Requirements.md
   - 02_Test_Cases.md
   - 03_Traceability_Matrix.md
-  - 04_Test_Report.md
-  _ 05_Issue_Report.md
+  - 04_Bug_Report.md
+  _ 05_Test_Report.md
 - README.md
 
 ```
