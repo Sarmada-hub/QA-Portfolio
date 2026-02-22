@@ -175,7 +175,7 @@
 | 3 | Enter valid password | Password is accepted | Behaved as expected | Pass |
 | 4 | Go to "My appointments" | Appointment page is displayed | Behaved as expected | Pass |
 | 5 | Select the appontment to cancel | "Cancel" button is display | Behaved as expected | Pass |
-| 6 | Click on the button "Cancel" | Following message is displayed "Are you sure you want to cancel this appointment?", buttons "Confirm" and "Cancel" are dispayed | Didn't behaved as expected | Fail | - | N/A |
+| 6 | Click on the button "Cancel" | Following message is displayed "Are you sure you want to cancel this appointment?", buttons "Confirm" and "Cancel" are dispayed | Did not behaved as expected | Fail | - | N/A |
 | 7 | Click on the button "Confirm" | Not executed | - | N/A |
 | 8 | Check appointment list | Not executed | - | N/A |
 | 9 | Verify appointment availability | Not executed | - | N/A |
