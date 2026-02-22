@@ -2,9 +2,9 @@
 
 ## Summary
 
-| ID | Tittle | Value |
-|------|------|-------|
-| BUG-001| Appointment can be cancelled within 24 hours before the appointment| Appointment management |
+| ID | Tittle | Value | Priority | Criticity |
+|------|------|-------|----------|-----------|
+| BUG-001| Appointment can be cancelled within 24 hours before the appointment| Appointment management | High | High |
 
 
 ## Description
@@ -30,11 +30,3 @@ When the user try to cancell the appointment within 24 hours before, a message s
 
 When the user try to cancell the appointment within 24 hours before, a the following message appears “Are you sure you want to cancell this appointment?" with the buttons "Cancel" and "Confirm". When the user click on the button "Confirm" he receive email and/or SMS to confirm the cancellation.  
 
-
-## Criticity 
-
-High critity  
-
-## Priority 
-
-High priority  
