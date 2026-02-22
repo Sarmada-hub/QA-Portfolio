@@ -1,43 +1,34 @@
-# Bug report 
+# Bug report
 
-## BUG-001 — Duplicate transaction on double click 
-Severity: Critical  
-Priority: High  
+## Summary
 
-Precondition: User 1 logged in, identity VERIFIED, balance 5000  
-Steps:
-1. Transfer 100 EUR to User 2
-2. Double-click "Confirm"
-   
-Observed:
-- Two transactions created
-- Balance debited twice
-  
-Expected:
-- Only one transaction created
-- Balance debited once
+| ID | Tittle | Value | Priority | Criticity |
+|------|------|-------|----------|-----------|
+| BUG-001| Deposit amount over 10000 EUR | Medium | Medium |
 
-## BUG-002 — FAILED operations not shown in history 
-Severity: Major  
-Priority: High   
 
-Precondition: Trigger insufficient funds on withdrawal  
-Steps:
-1. User 2 withdraw 150 (balance 100)
-2. Open History
-   
-Observed: no FAILED record   
+## Description
 
-Expected: FAILED entry with reason
+The user has the possibility to enter an amount greater than 10000 EUR.
 
-## BUG-003 — Deposit accepts amount 0 
-Severity: Major  
-Priority: High   
+## Steps to reproduce
 
-Steps:  
-1. Deposit 0 
-2. Submit   
+1. Click on the screen 
+2. Click on "login" 
+3. Enter valid ID 
+4. Enter valid password 
+5. Click on the button "login"
+6. Click on deposit 
+7. Enter the amount : 10001 EUR
 
-Observed: SUCCESS created  
 
-Expected: validation error, no transaction
+## Expected result
+
+When the user enters an amount greater than 10000 EUR, the following message must be displayed "Error : Max 10000 EUR"
+
+
+## Observed result 
+
+When the user enters an amount greater than 10000 EUR, no message indicates that an amount greater than 10000 EUR cannot be deposited. 
+
+
