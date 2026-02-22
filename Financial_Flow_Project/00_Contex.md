@@ -12,9 +12,9 @@ The purpose of this mini project is to simulate tests for an application handlin
 
 ## 2. Scope 
 1. Authentication & session management
-2. Identity verification (required before first transfer)
+2. Identity verification 
 3. Money deposit
 4. Money withdrawal
 5. Money transfer
-6. Transaction history (with the possibility to filter or search)
+6. Transaction history with the possibility to filter or search
 7. Notifications/messages
