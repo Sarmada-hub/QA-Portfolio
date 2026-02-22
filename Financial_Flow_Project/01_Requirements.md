@@ -20,7 +20,7 @@
 
 ### REQ-005 : Anti double execution
 - Double click / refresh must not create duplicated transactions.
-- Every transaction has a unique ID (e.g., TX-YYYYMMDD-xxxxx).
+- Every transaction has an unique ID.
 
 ### REQ-006 : Transaction history
 - All operations must be recorded, successed and failed
@@ -35,8 +35,8 @@
 
 ---
 
-## Sample Test Users
-- User 1: balance 5000 EUR, Identity VERIFIED
-- User 2: balance 100 EUR, Identity VERIFIED
-- User 3: balance 5000 EUR, Identity NOT_STARTED
-- User 4: balance 5000 EUR, Identity PENDING
+## Test users
+- User 1: balance 5000 EUR, identity VERIFIED
+- User 2: balance 100 EUR, identity VERIFIED
+- User 3: balance 5000 EUR, identity NOT_STARTED
+- User 4: balance 5000 EUR, identity PENDING
