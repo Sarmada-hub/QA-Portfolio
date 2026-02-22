@@ -6,18 +6,15 @@ REQ-ACC-001
 Users shall access public pages without authentication.
 
 REQ-ACC-002  
-Registered users will authenticate using valid credentials.
+Authentification will succed when credentials are valid.
 
 REQ-ACC-003  
-Authentication will fail when credentials are invalid.
+Authentification will fail when credentials are invalid.
 
 REQ-ACC-004  
-Password rules will be enforced during account creation.
-
-REQ-ACC-005  
 Registration will succed when credentials are valid.
 
-REQ-ACC-006  
+REQ-ACC-005
 Registration will fail when credentials are invalid.
 
 ---
