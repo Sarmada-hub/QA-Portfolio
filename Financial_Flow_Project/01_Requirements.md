@@ -29,14 +29,6 @@
   - Type : Deposit/Withdrawal/Transfer
   - Amount in euro
   - Date, time
-  - Status : SUCCESS/FAILED
-  - Payee for Transfer
+  - Payee for transfer
   - Failure reason if FAILED
 
----
-
-## Test users
-- User 1: balance 5000 EUR, identity VERIFIED
-- User 2: balance 100 EUR, identity VERIFIED
-- User 3: balance 5000 EUR, identity NOT_STARTED
-- User 4: balance 5000 EUR, identity PENDING
