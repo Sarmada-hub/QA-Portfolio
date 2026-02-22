@@ -4,7 +4,7 @@
 
 | ID | Tittle | Value | Priority | Criticity |
 |------|------|-------|----------|-----------|
-| BUG-001| Deposit amount over 10000 EUR | Medium | Medium |
+| BUG-001| Deposit amount over 10000 EUR | High | Critical |
 
 
 ## Description
