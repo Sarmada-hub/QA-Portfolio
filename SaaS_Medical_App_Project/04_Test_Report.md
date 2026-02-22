@@ -1,31 +1,24 @@
 # Test report  
 
-## Test objective
+## Overview
 
-The objective of this test campaign was to validate the functional behavior of the Medical Appointment SaaS application.
-
-Testing activities focused on authentication, access control and appointment management.
-
-
-## Test scope
-
-- User authentication
-- Account registration
-- Access control
-- Appointment booking
-- Appointment cancellation
-
-
-## Environment
-
-| Parameter | Value |
+| Item | Description |
 |-----------|-------|
-| Application Type | Web SaaS |
+| Application Type | Medical appointment SaaS |
 | Environnement | Google Chrome |
 | Test Type | Manual functional |
 
 
-## 4. Executed test cases
+## Test scope
+
+- Access control
+- User authentication
+- Account registration
+- Appointment booking
+- Appointment cancellation
+
+
+## Executed test 
 
 | Module | Total Tests | Passed | Failed |
 |--------|-------------|--------|--------|
@@ -33,22 +26,10 @@ Testing activities focused on authentication, access control and appointment man
 | Appointment Booking | 3 | 2 | 1 |
 | **Total** | **8** | **7** | **1** |
 
----
 
 ## Bug report
 
-| Defect ID | Title | Severity | Status |
-|------------|-------|----------|--------|
-| BUG-RDV-001 | Cancellation allowed less than 24h before appointment | High | Open |
+| Defect ID | Title | Severity |
+|------------|-------|----------|
+| BUG-RDV-001 | Cancellation permitted less than 24h before appointment | High | 
 
-
-## Risk Assessment
-
-The identified defect impacts business rules related to appointment management.
-
-Allowing late cancellation may lead to:
-- practitioner scheduling disruption
-- operational inefficiencies
-- reduced service reliability
-
-Risk level: **Medium to High**
