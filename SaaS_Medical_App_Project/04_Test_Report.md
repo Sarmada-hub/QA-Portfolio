@@ -23,8 +23,17 @@
 | Module | Total Tests | Passed | Failed |
 |--------|-------------|--------|--------|
 | Authentication | 5 | 5 | 0 |
-| Appointment Booking | 3 | 2 | 1 |
-| **Total** | **8** | **7** | **1** |
+| Appointment booking | 3 | 2 | 1 |
+| **Total** | **8** | **7** | **1** |  
+
+
+## Requirement Coverage
+
+| Status | Count |
+|--------------------|-------|
+| Total requirements | 10 |
+| Covered | 10 |
+| Coverage Rate | 100% |
 
 
 ## Bug report
