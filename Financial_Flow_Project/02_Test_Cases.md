@@ -35,7 +35,7 @@
 | 3 | Enter valid ID | Email is displayed | Behave as expected | Pass |
 | 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
 | 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
-| 6 | Wait 3 min inactivity | Homepage is displayed, session expired | Pass |
+| 6 | Wait 3 min inactivity | Homepage is displayed, session expired | Behave as expected | Pass |
 
 
 ## Identity verification
