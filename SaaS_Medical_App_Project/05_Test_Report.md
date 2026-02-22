@@ -40,5 +40,5 @@
 
 | Defect ID | Title | Severity |
 |------------|-------|----------|
-| BUG-RDV-001 | Cancellation permitted less than 24h before appointment | High | 
+| BUG-APT-001 | Cancellation permitted less than 24h before appointment | High | 
 
