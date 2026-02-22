@@ -7,7 +7,7 @@
 ### REQ-002 : Identity verification
 - Identity must be VERIFIED before performing a Transfer.
 - Identity status : NOT_STARTED, PENDING, VERIFIED, REJECTED
-- If NOT_STARTED/PENDING/REJECTED, the transfer blocked with clear message.
+- If NOT_STARTED/REJECTED, the transfer blocked with clear message.
 
 ### REQ-003 : Amount validation
 - Amount must be strictly > 0.
