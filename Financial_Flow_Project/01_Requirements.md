@@ -2,7 +2,7 @@
 
 ### REQ-001 : Authentication
 - User must be authenticated to perform Deposit/Withdrawal/Transfer.
-- Session expires after 10 minutes of inactivity.
+- Session expires after 3 minutes of inactivity.
 
 ### REQ-002 : Identity verification
 - Identity must be VERIFIED before performing a Transfer.
