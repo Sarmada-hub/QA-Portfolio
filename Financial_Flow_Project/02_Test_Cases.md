@@ -32,7 +32,7 @@
 |------|--------|-----------------|---------------|-----------|
 | 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
 | 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
-| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 3 | Enter valid ID | Email is displayed | Behave as expected | Pass |
 | 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
 | 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
 | 6 | Wait 3 min inactivity | Homepage is displayed, session expired | Pass |
@@ -54,7 +54,7 @@
 |------|--------|-----------------|---------------|-----------|
 | 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
 | 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
-| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 3 | Enter valid ID | Email is displayed | Behave as expected | Pass |
 | 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
 | 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
 | 6 | Click on transfer | Transfer page is displayed | Behave as expected | Pass |
@@ -79,7 +79,7 @@
 |------|--------|-----------------|---------------|-----------|
 | 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
 | 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
-| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 3 | Enter valid ID | Email is displayed | Behave as expected | Pass |
 | 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
 | 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
 | 6 | Click on transfer | Transfer page is displayed | Behave as expected | Pass |
@@ -105,7 +105,7 @@
 |------|--------|-----------------|---------------|-----------|
 | 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
 | 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
-| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 3 | Enter valid ID | Email is displayed | Behave as expected | Pass |
 | 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
 | 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
 | 6 | Click on deposit | Deposit page is displayed | Behave as expected | Pass |
@@ -127,11 +127,11 @@
 |------|--------|-----------------|---------------|-----------|
 | 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
 | 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
-| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 3 | Enter valid ID | Email is displayed | Behave as expected | Pass |
 | 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
 | 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
 | 6 | Click on deposit | Deposit page is displayed | Behave as expected | Pass |
-| 7 | Enter the amount : 10001 EUR | Amount invalid, following message is displayed "Error : Max 10000 EUR", no transaction | Behave as expected | Pass |
+| 7 | Enter the amount : 10001 EUR | Amount invalid, following message is displayed "Error : Max 10000 EUR", no transaction | Did not behave as expected | Fail |
 
 
 
@@ -151,15 +151,15 @@
 |------|--------|-----------------|---------------|-----------|
 | 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
 | 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
-| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 3 | Enter valid ID | Email is displayed | Behave as expected | Pass |
 | 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
 | 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
 | 6 | Click on deposit | Deposit page is displayed | Behave as expected | Pass |
 | 7 | Enter the amount | Amount valid | Behave as expected | Pass |
 | 8 | Click on transfer | Identity verification is asked, identity is PENDING | Behave as expected | Pass |
 | 9 | Enter the code receive by SMS | Identity is VERIFIED, SMS is send confirming the transfer | Behave as expected | Pass |
-| 10 | Click on balance | Balance is update | Behave as expected | Pass |
-| 11 | Click on history | History is update | Behave as expected | Pass |
+| 10 | Go to balance | Balance is update | Behave as expected | Pass |
+| 11 | Go to history | History is update | Behave as expected | Pass |
 
 
 ## Withdrawal
@@ -178,15 +178,15 @@
 |------|--------|-----------------|---------------|-----------|
 | 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
 | 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
-| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 3 | Enter valid ID | Email is displayed | Behave as expected | Pass |
 | 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
 | 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
 | 6 | Click on withdraw | Withdraw page is displayed | Behave as expected | Pass |
 | 7 | Enter the amount | Amount valid | Behave as expected | Pass |
 | 8 | Click on withdraw | Identity verification is asked, identity is PENDING | Behave as expected | Pass |
 | 9 | Enter the code receive by SMS | Identity is VERIFIED, cash withdrawn | Behave as expected | Pass |
-| 10 | Click balance | Balance is update | Behave as expected |Pass |
-| 11 | Click history | History is update | Behave as expected |Pass |
+| 10 | Go to balance | Balance is update | Behave as expected |Pass |
+| 11 | Go to history | History is update | Behave as expected |Pass |
 
 
 ### TC-009 : Withdrawal blocked when insufficient balance
@@ -203,7 +203,7 @@
 |------|--------|-----------------|---------------|-----------|
 | 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
 | 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
-| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 3 | Enter valid ID | Email is displayed | Behave as expected | Pass |
 | 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
 | 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
 | 6 | Click on withdraw | Withdraw page is displayed | Behave as expected | Pass |
@@ -226,7 +226,7 @@
 |------|--------|-----------------|---------------|-----------|
 | 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
 | 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
-| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 3 | Enter valid ID | Email is displayed | Behave as expected | Pass |
 | 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
 | 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
 | 6 | Click on transfer | Transfer page is displayed | Behave as expected | Pass |
@@ -234,8 +234,8 @@
 | 8 | Enter the payee's ID | ID valid | Behave as expected | Pass |
 | 9 | Click on transfer | Identity verification is asked, identity is PENDING | Behave as expected |Pass |
 | 10 | Enter the code receive by SMS | Identity is VERIFIED, SMS is send confirming the transfer | Behave as expected | Pass |
-| 11 | Click balance | Balance is update | Behave as expected |Pass |
-| 12 | Click history | History is update | Behave as expected |Pass |
+| 11 | Go to balance | Balance is update | Behave as expected |Pass |
+| 12 | Go to history | History is update | Behave as expected |Pass |
 
 
 
@@ -252,7 +252,7 @@
 |------|--------|-----------------|---------------|-----------|
 | 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
 | 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
-| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 3 | Enter valid ID | Email is displayed | Behave as expected | Pass |
 | 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
 | 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
 | 6 | Click on transfer | Transfer page is displayed | Behave as expected | Pass |
@@ -274,7 +274,7 @@
 |------|--------|-----------------|---------------|-----------|
 | 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
 | 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
-| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 3 | Enter valid ID | Email is displayed | Behave as expected | Pass |
 | 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
 | 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
 | 6 | Click on transfer | Transfer page is displayed | Behave as expected | Pass |
@@ -298,10 +298,10 @@
 |------|--------|-----------------|---------------|-----------|
 | 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
 | 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
-| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 3 | Enter valid ID | Email is displayed | Behave as expected | Pass |
 | 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
 | 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
-| 6 | Click on history | History page is displayed | Behave as expected | Pass |
+| 6 | Go to on history | History page is displayed | Behave as expected | Pass |
 | 7 | Search transaction ID | Transaction is displayed | Behave as expected | Pass |
 
 
