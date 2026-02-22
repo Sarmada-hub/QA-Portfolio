@@ -1,7 +1,7 @@
 # Financial Flow Project 
 
 ## 1. Objective
-The purpose of this mini project is to simulate tests for an application handling financial operations:
+The purpose of this mini project is to simulate tests for an application handling financial operations deployed on self service kiosks:
 - Money deposit
 - Money withdrawal
 - Money transfer
