@@ -14,7 +14,7 @@ Authentification will fail when credentials are invalid.
 REQ-ACC-004  
 Registration will succed when credentials are valid.
 
-REQ-ACC-005
+REQ-ACC-005  
 Registration will fail when credentials are invalid.
 
 ---
