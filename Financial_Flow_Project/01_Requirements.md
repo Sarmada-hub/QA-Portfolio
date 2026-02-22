@@ -18,11 +18,7 @@
 - Withdrawal/Transfer require sufficient balance.
 - Balance updates immediately after a successful operation.
 
-### REQ-005 : Anti double execution
-- Double click / refresh must not create duplicated transactions.
-- Every transaction has an unique ID.
-
-### REQ-006 : Transaction history
+### REQ-005 : Transaction history
 - All operations must be recorded, successed and failed
 - History includes:
   - Transaction ID
