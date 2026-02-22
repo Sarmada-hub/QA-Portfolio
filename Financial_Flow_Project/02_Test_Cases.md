@@ -1,184 +1,308 @@
 # Test Cases 
 
----
-
 ## Authentication 
 
-### TC-001 (High priority) : Block operations for unauthenticated user (REQ-001)
-Precondition: user logged out  
-Steps: 
-1. Open the deposit page
-2. Try to submit  
+### TC-001 : Block operations for unauthenticated user 
 
-Expected: redirect to login and message "Authentication required"
+| Field | Description |
+|------|-------------|
+| Requirement ID | REQ-001 |
+| Priority | High |
+| Test Type | Functional |
+| Module | Authentication |
+| Preconditions | No user is logged in |
 
-### TC-002 (High priority) : Session timeout after inactivity (REQ-001)
-Precondition: user logged in  
-Steps: 
-1. Wait 10 min inactivity
-2. Click on Withdrawal  
+| Step | Action | Expected result | Actual result | Pass/Fail |
+|------|--------|-----------------|---------------|-----------|
+| 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
+| 2 | Try to make an operation | Credentials are required | Behave as expected | Pass | 
 
-Expected: session expired, user must login again
 
----
+### TC-002 : Session timeout after inactivity 
+
+| Field | Description |
+|------|-------------|
+| Requirement ID | REQ-001 |
+| Priority | High |
+| Test Type | Functional |
+| Module | Authentication |
+| Preconditions | User is logged in |
+
+| Step | Action | Expected result | Actual result | Pass/Fail |
+|------|--------|-----------------|---------------|-----------|
+| 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
+| 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
+| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
+| 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
+| 6 | Wait 3 min inactivity | Homepage is displayed, session expired | Pass |
+
 
 ## Identity verification
 
-### TC-003 (High priority) : Transfer blocked if identity NOT_STARTED (REQ-002)
-Precondition: User 3 logged in identity NOT_STARTED  
-Steps: 
-1. Transfer 50 EUR to U2
-2. Confirm  
+### TC-003 : Transfer blocked if identity NOT_STARTED 
 
-Expected: Transfer blocked + message requesting identity
+| Field | Description |
+|------|-------------|
+| Requirement ID | REQ-002 |
+| Priority | High |
+| Test Type | Functional |
+| Module | Identity verification |
+| Preconditions | User is logged in |
 
-### TC-004 (High priority) : Transfer blocked if identity PENDING (REQ-002)  
-Precondition: User 4 logged in identity PENDING  
-Steps:   
-1. Transfer 50 EUR to User 2  
-2. Confirm  
+| Step | Action | Expected result | Actual result | Pass/Fail |
+|------|--------|-----------------|---------------|-----------|
+| 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
+| 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
+| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
+| 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
+| 6 | Click on transfer | Transfer page is displayed | Behave as expected | Pass |
+| 7 | Enter the amount | Amount valid | Behave as expected | Pass |
+| 8 | Enter the payee's ID | ID valid | Behave as expected | Pass |
+| 9 | Click on transfer | Identity verification is asked, identity is PENDING | Behave as expected |Pass |
+| 10 | Wait 30 seconds | Identity is NOT_STARTED, transfer blocked | Behave as expected | Pass |
 
-Expected: blocked and message "identity in progress"
 
-### TC-005 (High priority) — Transfer allowed if identity VERIFIED (REQ-002)
-Precondition: U1 logged in identity VERIFIED
-Steps: 
-1. Transfer 50 EUR to User 2
-2. Confirm  
 
-Expected: SUCCESS and transaction ID generated
+### TC-004 : Transfer allowed if identity VERIFIED 
 
----
+| Field | Description |
+|------|-------------|
+| Requirement ID | REQ-002 |
+| Priority | High |
+| Test Type | Functional |
+| Module | Identity verification |
+| Preconditions | User is logged in |
+
+| Step | Action | Expected result | Actual result | Pass/Fail |
+|------|--------|-----------------|---------------|-----------|
+| 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
+| 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
+| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
+| 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
+| 6 | Click on transfer | Transfer page is displayed | Behave as expected | Pass |
+| 7 | Enter the amount | Amount valid | Behave as expected | Pass |
+| 8 | Enter the payee's ID | ID valid | Behave as expected | Pass |
+| 9 | Click on transfer | Identity verification is asked, identity is PENDING | Behave as expected |Pass |
+| 10 | Enter the code receive by SMS | Identity is VERIFIED, SMS is send confirming the transfer | Behave as expected | Pass |
+
 
 ## Amount validation
 
-### TC-006 (High priority) : Amount = 0 rejected (REQ-003)
-Precondition: User 1 logged in  
-Steps: 
-1. Deposit 0 EUR
-2. Submit  
+### TC-005 : Deposit an amount = 0 EUR rejected  
 
-Expected: error "Invalid amount" and no transaction created
+| Field | Description |
+|------|-------------|
+| Requirement ID | REQ-003 |
+| Priority | High |
+| Test Type | Functional |
+| Module | Identity verification |
+| Preconditions | User is logged in |
 
-### TC-007 (High priority) : Negative amount rejected (REQ-003)
-Precondition: User 1 logged in  
-Steps: 
-1. Withdrawal 10 EUR
-2. Submit  
+| Step | Action | Expected result | Actual result | Pass/Fail |
+|------|--------|-----------------|---------------|-----------|
+| 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
+| 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
+| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
+| 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
+| 6 | Click on deposit | Deposit page is displayed | Behave as expected | Pass |
+| 7 | Enter the amount : 0 EUR | Following message is displayed "Enter an amount between 0,01 and 10000 EUR", no transaction | Behave as expected | Pass |
 
-Expected: error and no transaction
 
-### TC-008 (High priority) : Amount > 10,000 rejected (REQ-003)
-Precondition: User 1 logged in  
-Step:  
-Transfer 10001 EUR to U2  
 
-Expected: error "Max 10000" and  no transaction
+### TC-006 : Amount > 10,000 rejected 
 
----
+| Field | Description |
+|------|-------------|
+| Requirement ID | REQ-003 |
+| Priority | High |
+| Test Type | Functional |
+| Module | Identity verification |
+| Preconditions | User is logged in |
+
+| Step | Action | Expected result | Actual result | Pass/Fail |
+|------|--------|-----------------|---------------|-----------|
+| 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
+| 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
+| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
+| 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
+| 6 | Click on deposit | Deposit page is displayed | Behave as expected | Pass |
+| 7 | Enter the amount : 10001 EUR | Amount invalid, following message is displayed "Error : Max 10000 EUR", no transaction | Behave as expected | Pass |
+
+
 
 ## Deposit
 
-### TC-009 (Medium priority) : Deposit updates balance and history (REQ-004, REQ-006)
-Precondition: User 2 balance 100  
-Steps:  
-1. Deposit 50
-2. Submit  
+### TC-007 : Deposit updates balance and history 
 
-Expected: SUCCESS, new balance 150, history contains deposit entry
+| Field | Description |
+|------|-------------|
+| Requirement ID | REQ-004 and REQ-006 |
+| Priority | Medium |
+| Test Type | Functional |
+| Module | Identity verification |
+| Preconditions | User is logged in |
 
----
+| Step | Action | Expected result | Actual result | Pass/Fail |
+|------|--------|-----------------|---------------|-----------|
+| 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
+| 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
+| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
+| 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
+| 6 | Click on deposit | Deposit page is displayed | Behave as expected | Pass |
+| 7 | Enter the amount | Amount valid | Behave as expected | Pass |
+| 8 | Click on transfer | Identity verification is asked, identity is PENDING | Behave as expected | Pass |
+| 9 | Enter the code receive by SMS | Identity is VERIFIED, SMS is send confirming the transfer | Behave as expected | Pass |
+| 10 | Click on balance | Balance is update | Behave as expected | Pass |
+| 11 | Click on history | History is update | Behave as expected | Pass |
+
 
 ## Withdrawal
 
-### TC-010 (High priority) : Withdrawal updates balance and history (REQ-004, REQ-006)
-Precondition: User 1 balance 5000  
-Steps: 
-1. Withdraw 200
-2. submit  
+### TC-008 : Withdrawal updates balance and history 
 
-Expected: SUCCESS, balance 4800, history contains withdrawal entry
+| Field | Description |
+|------|-------------|
+| Requirement ID | REQ-004 and REQ-006 |
+| Priority | High |
+| Test Type | Functional |
+| Module | Identity verification |
+| Preconditions | User is logged in |
 
-### TC-011 (High priority) : Withdrawal blocked when insufficient balance (REQ-004, REQ-006)
-Precondition: User 2 balance 100  
-Steps: 
-1. Withdraw 150
-2. Submit  
+| Step | Action | Expected result | Actual result | Pass/Fail |
+|------|--------|-----------------|---------------|-----------|
+| 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
+| 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
+| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
+| 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
+| 6 | Click on withdraw | Withdraw page is displayed | Behave as expected | Pass |
+| 7 | Enter the amount | Amount valid | Behave as expected | Pass |
+| 8 | Click on withdraw | Identity verification is asked, identity is PENDING | Behave as expected | Pass |
+| 9 | Enter the code receive by SMS | Identity is VERIFIED, cash withdrawn | Behave as expected | Pass |
+| 10 | Click balance | Balance is update | Behave as expected |Pass |
+| 11 | Click history | History is update | Behave as expected |Pass |
 
-Expected: FAILED with message "Insufficient funds", balance unchanged, history records FAILED
 
----
+### TC-009 : Withdrawal blocked when insufficient balance
+
+| Field | Description |
+|------|-------------|
+| Requirement ID | REQ-004 and REQ-006 |
+| Priority | High |
+| Test Type | Functional |
+| Module | Identity verification |
+| Preconditions | User is logged in |
+
+| Step | Action | Expected result | Actual result | Pass/Fail |
+|------|--------|-----------------|---------------|-----------|
+| 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
+| 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
+| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
+| 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
+| 6 | Click on withdraw | Withdraw page is displayed | Behave as expected | Pass |
+| 7 | Enter the amount | Amount invalid, following message is displayed "Insufficient funds", no transaction | Behave as expected | Pass |
+
 
 ## Transfer
 
-### TC-012 (High priority) : Transfer updates both balances and history (REQ-004, RQ-006)  
-Precondition: User 1 balance 5000, User 2 balance 100, identity VERIFIED   
-Steps:  
-User 1 transfers 300 to User 2  
+### TC-010 : Transfer updates both balances and history 
+  
+| Field | Description |
+|------|-------------|
+| Requirement ID | REQ-002 |
+| Priority | High |
+| Test Type | Functional |
+| Module | Identity verification |
+| Preconditions | User is logged in |
 
-Expected: User 1 = 4700 EUR, User 2 = 400 EUR, history updated for both sides
+| Step | Action | Expected result | Actual result | Pass/Fail |
+|------|--------|-----------------|---------------|-----------|
+| 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
+| 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
+| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
+| 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
+| 6 | Click on transfer | Transfer page is displayed | Behave as expected | Pass |
+| 7 | Enter the amount | Amount valid | Behave as expected | Pass |
+| 8 | Enter the payee's ID | ID valid | Behave as expected | Pass |
+| 9 | Click on transfer | Identity verification is asked, identity is PENDING | Behave as expected |Pass |
+| 10 | Enter the code receive by SMS | Identity is VERIFIED, SMS is send confirming the transfer | Behave as expected | Pass |
+| 11 | Click balance | Balance is update | Behave as expected |Pass |
+| 12 | Click history | History is update | Behave as expected |Pass |
 
-### TC-013 (High priority) : Transfer to invalid recipient (Error handling)
-Precondition: User 1 identity VERIFIED  
-Steps: 
-Transfer 10 to invalid recipient ID  
 
-Expected: FAILED, message "Recipient not found", no balance change, history records FAILED
 
-### TC-014 (High priority) : Transfer blocked when insufficient balance (REQ-004)
-Precondition: User 2 balance 100, identity VERIFIED  
-Steps:  
-Transfer 150 to User 1  
+### TC-011 : Transfer to invalid payee 
+ 
+| Field | Description |
+|------|-------------|
+| Priority | High |
+| Test Type | Functional |
+| Module | Identity verification |
+| Preconditions | User is logged in |
 
-Expected: FAILED "Insufficient funds", no balance change
+| Step | Action | Expected result | Actual result | Pass/Fail |
+|------|--------|-----------------|---------------|-----------|
+| 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
+| 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
+| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
+| 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
+| 6 | Click on transfer | Transfer page is displayed | Behave as expected | Pass |
+| 7 | Enter the amount | Amount valid | Behave as expected | Pass |
+| 8 | Enter a wrong payee ID | ID invalid, no transaction | Behave as expected | Pass |
 
----
 
-## Anti double execution
+### TC-012 : Transfer blocked when insufficient balance 
 
-### TC-015 (High priority) : Double click confirm creates only one transaction (REQ-005)
-Precondition: User 1 identity VERIFIED  
-Steps: 
-1. Transfer 20 
-2. Double-click Confirm  
+| Field | Description |
+|------|-------------|
+| Requirement ID | REQ-004 |
+| Priority | High |
+| Test Type | Functional |
+| Module | Identity verification |
+| Preconditions | User is logged in |
 
-Expected: only one transaction created, one debit only
+| Step | Action | Expected result | Actual result | Pass/Fail |
+|------|--------|-----------------|---------------|-----------|
+| 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
+| 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
+| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
+| 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
+| 6 | Click on transfer | Transfer page is displayed | Behave as expected | Pass |
+| 7 | Enter the amount | Amount invalid, following message is displayed "Insufficient funds", no transaction | Behave as expected | Pass |
 
-### TC-016 (High priority) : Refresh confirmation page does not duplicate transaction (REQ-005)
-Precondition: User 1 about to confirm a transfer  
-Steps: 
-1. Confirm 
-2. Immediately refresh  
 
-Expected: no duplicate transaction, stable status
-
----
 
 ## History
 
-### TC-017 (High priority) : History includes transaction ID + status (REQ-006)
-Precondition: at least one operation exists  
-Step:  
-Open History  
+### TC-013 : Search by transaction ID
 
-Expected: entries show transaction ID, type, amount, date, time, status
+| Field | Description |
+|------|-------------|
+| Requirement ID | REQ-006 |
+| Priority | High |
+| Test Type | Functional |
+| Module | Identity verification |
+| Preconditions | User is logged in |
 
-### TC-018 (Medium priority) : History sorted by most recent first (REQ-006)
-Precondition: multiple operations exist  
-Step:  
-Open History  
+| Step | Action | Expected result | Actual result | Pass/Fail |
+|------|--------|-----------------|---------------|-----------|
+| 1 | Click on the screen | Homepage is displayed | Behave as expected | Pass |
+| 2 | Click on "login" | Login page is displayed | Behave as expected | Pass
+| 3 | Enter valid email | Email is displayed | Behave as expected | Pass |
+| 4 | Enter valid password | Password is hidden behind black dots | Behave as expected | Pass |
+| 5 | Click on the button "login" | User is authenticated, access to the dashboard | Behave as expected | Pass |
+| 6 | Click on history | History page is displayed | Behave as expected | Pass |
+| 7 | Search transaction ID | Transaction is displayed | Behave as expected | Pass |
 
-Expected: newest entry on top
 
-### TC-019 (Medium priority) : Search by transaction ID (REQ-006)
-Precondition: known transaction ID  
-Step:  
-Search transaction ID  
-Expected: matching entry displayed
 
-### TC-020 (Medium priority) : FAILED operations appear in history (REQ-006)
-Precondition: trigger a FAILED operation (e.g. insufficient funds)  
-Step:  
-Open History  
-
-Expected: FAILED line visible with failure reason
