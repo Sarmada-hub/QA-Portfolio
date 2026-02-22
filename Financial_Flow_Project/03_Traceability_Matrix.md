@@ -8,3 +8,10 @@
 | REQ-004 Balance rules | TC-007, TC-008, TC-009, TC-010, TC-012 |
 | REQ-005 Transaction history | TC-007, TC-008, TC-010, TC-013 |
 
+---
+
+## Coverage Summary
+
+- Total Requirements: 5  
+- Covered Requirements: 5  
+- Coverage Rate: 100%
