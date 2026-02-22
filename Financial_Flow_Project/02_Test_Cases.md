@@ -2,7 +2,7 @@
 
 ---
 
-## Authentication / Session
+## Authentification 
 
 ### TC-001 (High priority) : Block operations for unauthenticated user (REQ-001)
 Precondition: user logged out  
