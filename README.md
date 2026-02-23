@@ -3,7 +3,7 @@
 Bienvenue dans mon portfolio QA.
 
 Ce repository présente un projet de test logiciel réalisé dans le cadre de ma reconversion vers le domaine de la qualité logicielle.  
-L'objectif est de montrer ma capacité à structurer une démarche d'analyse d'exigences, de conception de test dans différents contextes et de validation.
+L'objectif est de montrer ma capacité à structurer une démarche d'analyse d'exigences, de conception de test dans différents contextes.
 
 ---
 
